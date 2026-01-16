@@ -62,7 +62,7 @@ function Hero() {
             backgroundSize="cover"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
-            opacity={index === currentImageIndex ? 0.2 : 0}
+            opacity={index === currentImageIndex ? 0.3 : 0}
             transition="opacity 1.5s ease-in-out"
           />
         ))}
