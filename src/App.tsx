@@ -4,13 +4,10 @@ import { Box } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Education from "./components/Education";
-import Experience from "./components/Experience";
-import Awards from "./components/Awards";
-import Projects from "./components/Projects";
-import Gallery from "./components/Gallery";
-import Videos from "./components/Videos";
-import Skills from "./components/Skills";
+import LeadershipJourney from "./components/LeadershipJourney";
+import ImpactMetrics from "./components/ImpactMetrics";
+import MediaShowcase from "./components/MediaShowcase";
+import EducationSkills from "./components/EducationSkills";
 import Contact from "./components/Contact";
 
 function App() {
@@ -20,13 +17,10 @@ function App() {
     const sections = [
       "home",
       "about",
-      "education",
-      "experience",
-      "awards",
-      "projects",
-      "gallery",
-      "videos",
-      "skills",
+      "leadership",
+      "impact",
+      "media",
+      "education-skills",
       "contact",
     ];
 
@@ -68,13 +62,10 @@ function App() {
       <Box as="main" w="100%" p={0} m={0}>
         <Hero />
         <About />
-        <Education />
-        <Experience />
-        <Awards />
-        <Projects />
-        <Gallery />
-        <Videos />
-        <Skills />
+        <LeadershipJourney />
+        <ImpactMetrics />
+        <MediaShowcase />
+        <EducationSkills />
         <Contact />
       </Box>
     </Box>

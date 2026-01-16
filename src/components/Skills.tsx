@@ -7,18 +7,18 @@ function Skills() {
     if (element) element.scrollIntoView({ behavior: 'smooth' })
   }
 
-  // Color palette for badges
+  // Color palette for badges - Communication & New Media theme
   const badgeColors = [
-    { bg: 'purple.100', color: 'purple.700', hoverBg: 'purple.200' },
-    { bg: 'blue.100', color: 'blue.700', hoverBg: 'blue.200' },
-    { bg: 'cyan.100', color: 'cyan.700', hoverBg: 'cyan.200' },
-    { bg: 'teal.100', color: 'teal.700', hoverBg: 'teal.200' },
-    { bg: 'green.100', color: 'green.700', hoverBg: 'green.200' },
-    { bg: 'yellow.100', color: 'yellow.700', hoverBg: 'yellow.200' },
     { bg: 'orange.100', color: 'orange.700', hoverBg: 'orange.200' },
-    { bg: 'red.100', color: 'red.700', hoverBg: 'red.200' },
+    { bg: 'teal.100', color: 'teal.700', hoverBg: 'teal.200' },
     { bg: 'pink.100', color: 'pink.700', hoverBg: 'pink.200' },
-    { bg: 'indigo.100', color: 'indigo.700', hoverBg: 'indigo.200' },
+    { bg: 'cyan.100', color: 'cyan.700', hoverBg: 'cyan.200' },
+    { bg: 'red.100', color: 'red.700', hoverBg: 'red.200' },
+    { bg: 'yellow.100', color: 'yellow.700', hoverBg: 'yellow.200' },
+    { bg: 'coral.100', color: 'coral.700', hoverBg: 'coral.200' },
+    { bg: 'blue.100', color: 'blue.700', hoverBg: 'blue.200' },
+    { bg: 'green.100', color: 'green.700', hoverBg: 'green.200' },
+    { bg: 'purple.100', color: 'purple.700', hoverBg: 'purple.200' },
   ]
 
   const getBadgeColor = (index: number) => {
@@ -27,24 +27,24 @@ function Skills() {
 
   const skillCategories = [
     {
-      category: 'Academic',
-      skills: ['Ielts 8.0', 'ACT 35/36 (STEM)', 'SAT 800/800 (Chemistry)'],
+      category: 'Media Production',
+      skills: ['Video Editing', 'Audio Production', 'Photography', 'Cinematography', 'Post-Production', 'Color Grading'],
     },
     {
-      category: 'Professional',
-      skills: ['Couchbase Associate Developer', 'Certified Kubernetes App Developer', 'GCP Cloud Enginnering', 'AWS Cloud Practitioner'],
+      category: 'Digital Design',
+      skills: ['Adobe Creative Suite', 'Figma', 'UI/UX Design', 'Graphic Design', 'Motion Graphics', 'Typography'],
     },
     {
-      category: 'Data Engineering',
-      skills: ['GCP', 'Hadoop', 'Hive', 'Spark', 'Kafka', 'MySQL', 'MongoDB', 'Couchbase', 'Redis', 'dbt', 'Iceberg', 'Debezium'],
+      category: 'Content Creation',
+      skills: ['Content Strategy', 'Social Media Management', 'Copywriting', 'Storytelling', 'Branding', 'Digital Marketing'],
     },
     {
-      category: 'Data & ML',
-      skills: ['SQL', 'Python', 'Java', 'Scala', 'Bash', 'Airflow', 'Spring Boot', 'GCP', 'AWS', 'Scikit-learn', 'TensorFlow', 'PyTorch'],
+      category: 'Communication',
+      skills: ['Public Speaking', 'Presentation Design', 'Interpersonal Communication', 'Media Writing', 'Journalism', 'Research'],
     },
     {
-      category: 'DevOps & MLOps',
-      skills: ['Linux', 'Jenkins', 'Ansible', 'Docker', 'Kubernetes', 'Spring Cloud', 'ELK', 'Prometheus', 'Grafana', 'MLflow', 'Feature Store', 'Expectations'],
+      category: 'New Media Technologies',
+      skills: ['Web Development', 'HTML/CSS', 'JavaScript', 'WordPress', 'AR/VR Basics', 'Interactive Media'],
     }
   ]
 
@@ -67,7 +67,7 @@ function Skills() {
             as="span"
             fontSize={{ base: 'md', md: 'lg' }}
             fontWeight={700}
-            color="purple.600"
+            color="orange.600"
             textTransform="uppercase"
             letterSpacing="wide"
             px={6}
@@ -76,7 +76,7 @@ function Skills() {
             borderRadius="full"
             boxShadow="md"
           >
-            Technical Skills & Certifications
+            Skills & Expertise
           </Box>
           <Heading
             as="h2"
@@ -84,11 +84,11 @@ function Skills() {
             fontWeight={800}
             textAlign="center"
             lineHeight="shorter"
-            bgGradient="linear(135deg, #667eea 0%, #764ba2 100%)"
+            bgGradient="linear(135deg, #FF6B6B 0%, #FF8E53 50%, #4ECDC4 100%)"
             bgClip="text"
             letterSpacing="tight"
           >
-            Technical Skills & Certifications
+            Skills & Expertise
           </Heading>
         </VStack>
         <SimpleGrid columns={{ base: 1, md: 3 }} gap={8}>
@@ -103,8 +103,8 @@ function Skills() {
               borderColor="gray.100"
               _hover={{
                 transform: 'translateY(-4px)',
-                boxShadow: '0 8px 30px rgba(102, 126, 234, 0.15)',
-                borderColor: 'purple.200',
+                boxShadow: '0 8px 30px rgba(255, 107, 107, 0.15)',
+                borderColor: 'orange.200',
               }}
               transition="all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
             >
@@ -116,7 +116,7 @@ function Skills() {
                 fontWeight={700}
                 pb={3}
                 borderBottom="2px solid"
-                borderColor="purple.200"
+                borderColor="orange.200"
               >
                 {category.category}
               </Heading>
@@ -159,8 +159,8 @@ function Skills() {
           bottom={8}
           left="50%"
           transform="translateX(-50%)"
-          color="purple.600"
-          _hover={{ color: 'purple.700', transform: 'translateX(-50%) translateY(4px)' }}
+        color="orange.600"
+        _hover={{ color: 'orange.700', transform: 'translateX(-50%) translateY(4px)' }}
           cursor="pointer"
           onClick={() => scrollToSection('contact')}
           transition="all 0.3s"

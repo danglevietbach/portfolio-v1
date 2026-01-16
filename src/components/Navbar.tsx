@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Box, Container, Flex, Link, IconButton, useDisclosure, Drawer, VStack, Text, Image } from '@chakra-ui/react'
 import { HiMenu, HiX } from 'react-icons/hi'
-import profileImage from '../assets/profile.jpeg'
+import profileImage from '../assets/images/Background/IMG_2359.JPG'
 
 interface NavbarProps {
   activeSection?: string
@@ -22,13 +22,10 @@ function Navbar({ activeSection = 'home' }: NavbarProps) {
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
-    { id: 'education', label: 'Education' },
-    { id: 'experience', label: 'Experience' },
-    { id: 'awards', label: 'Awards' },
-    { id: 'projects', label: 'Projects' },
-    { id: 'gallery', label: 'Gallery' },
-    { id: 'videos', label: 'Videos' },
-    { id: 'skills', label: 'Skills' },
+    { id: 'leadership', label: 'Leadership' },
+    { id: 'impact', label: 'Impact' },
+    { id: 'media', label: 'Media' },
+    { id: 'education-skills', label: 'Education & Skills' },
     { id: 'contact', label: 'Contact' },
   ]
 
@@ -47,7 +44,7 @@ function Navbar({ activeSection = 'home' }: NavbarProps) {
       top={0}
       left={0}
       right={0}
-      bg="white"
+      bg="orange.50"
       backdropFilter="blur(12px)"
       boxShadow="0 4px 20px rgba(0, 0, 0, 0.12)"
       zIndex={1000}
@@ -78,10 +75,10 @@ function Navbar({ activeSection = 'home' }: NavbarProps) {
               h={{ base: '40px', md: '48px' }}
               borderRadius="lg"
               overflow="hidden"
-              boxShadow="0 4px 12px rgba(102, 126, 234, 0.4)"
+              boxShadow="0 4px 12px rgba(255, 107, 107, 0.4)"
               border="2px solid"
-              borderColor="purple.200"
-              bg="gray.100"
+              borderColor="orange.200"
+              bg="orange.100"
             >
               <Image
                 src={profileImage}
@@ -120,13 +117,16 @@ function Navbar({ activeSection = 'home' }: NavbarProps) {
                     py={2}
                     borderRadius="lg"
                     fontSize="sm"
-                    fontWeight={isActive ? 600 : 500}
-                    color={isActive ? '#667eea' : 'gray.700'}
-                    bg={isActive ? 'purple.50' : 'transparent'}
+                    fontWeight={isActive ? 700 : 500}
+                    color={isActive ? 'teal.700' : 'gray.700'}
+                    bg={isActive ? 'teal.100' : 'transparent'}
+                    border={isActive ? '2px solid' : '2px solid transparent'}
+                    borderColor={isActive ? 'teal.400' : 'transparent'}
                     position="relative"
                     _hover={{
-                      color: '#667eea',
-                      bg: 'purple.50',
+                      color: 'teal.700',
+                      bg: 'teal.50',
+                      borderColor: 'teal.300',
                       transform: 'translateY(-1px)',
                     }}
                     transition="all 0.2s ease"
@@ -136,14 +136,14 @@ function Navbar({ activeSection = 'home' }: NavbarProps) {
                     {isActive && (
                       <Box
                         position="absolute"
-                        bottom={0}
+                        bottom={-2}
                         left="50%"
                         transform="translateX(-50%)"
-                        w="6px"
-                        h="6px"
+                        w="80%"
+                        h="3px"
                         borderRadius="full"
-                        bg="#667eea"
-                        boxShadow="0 0 8px rgba(102, 126, 234, 0.6)"
+                        bgGradient="linear(90deg, teal.400 0%, teal.600 100%)"
+                        boxShadow="0 2px 8px rgba(45, 212, 191, 0.6)"
                       />
                     )}
                   </Link>
@@ -162,11 +162,11 @@ function Navbar({ activeSection = 'home' }: NavbarProps) {
             size="lg"
             borderRadius="lg"
             _hover={{
-              bg: 'purple.50',
-              color: '#667eea',
+              bg: 'orange.50',
+              color: '#FF6B6B',
             }}
             transition="all 0.2s"
-            backgroundColor="gray.100"
+            backgroundColor="orange.100"
           >
             {open ? <HiX size={24} /> : <HiMenu size={24} />}
           </IconButton>
@@ -177,12 +177,12 @@ function Navbar({ activeSection = 'home' }: NavbarProps) {
       <Drawer.Root open={open} onOpenChange={(e) => !e.open && onClose()} placement="end">
         <Drawer.Backdrop bg="rgba(0, 0, 0, 0.4)" />
         <Drawer.Positioner>
-          <Drawer.Content maxW="320px" bg="white">
+          <Drawer.Content maxW="320px" bg="orange.50">
             <Drawer.Header
               borderBottom="1px solid"
               borderColor="gray.200"
-              bgGradient="linear(135deg, #667eea 0%, #764ba2 100%)"
-              color="blue.600"
+              bgGradient="linear(135deg, #FF6B6B 0%, #FF8E53 50%, #4ECDC4 100%)"
+              color="gray.900"
               py={6}
             >
               <Flex justify="space-between" align="center">
@@ -194,9 +194,9 @@ function Navbar({ activeSection = 'home' }: NavbarProps) {
                   variant="ghost"
                   onClick={onClose}
                   size="sm"
-                  color="blue.600"
-                  _hover={{ bg: 'rgba(255, 255, 255, 0.2)' }}
-                  backgroundColor="gray.100"
+                  color="gray.900"
+                  _hover={{ bg: 'rgba(0, 0, 0, 0.1)' }}
+                  backgroundColor="orange.200"
                 >
                   <HiX />
                 </IconButton>
@@ -214,27 +214,29 @@ function Navbar({ activeSection = 'home' }: NavbarProps) {
                       px={4}
                       py={3}
                       borderRadius="lg"
-                      color={isActive ? '#667eea' : 'gray.700'}
-                      fontWeight={isActive ? 600 : 500}
+                      color={isActive ? 'teal.700' : 'gray.700'}
+                      fontWeight={isActive ? 700 : 500}
                       fontSize="md"
-                      bg={isActive ? 'purple.50' : 'transparent'}
+                      bg={isActive ? 'teal.100' : 'transparent'}
+                      borderLeft={isActive ? '4px solid' : '4px solid transparent'}
+                      borderColor={isActive ? 'teal.500' : 'transparent'}
                       transition="all 0.2s"
                       _hover={{
-                        color: '#667eea',
-                        bg: 'purple.50',
+                        color: 'teal.700',
+                        bg: 'teal.50',
                         pl: isActive ? 4 : 5,
-                        borderLeft: '3px solid',
-                        borderColor: '#667eea',
+                        borderLeft: '4px solid',
+                        borderColor: isActive ? 'teal.500' : 'teal.300',
                       }}
                     >
                       <Flex align="center" gap={2}>
                         {isActive && (
                           <Box
-                            w="8px"
-                            h="8px"
+                            w="10px"
+                            h="10px"
                             borderRadius="full"
-                            bg="#667eea"
-                            boxShadow="0 0 8px rgba(102, 126, 234, 0.6)"
+                            bgGradient="linear(135deg, teal.400 0%, teal.600 100%)"
+                            boxShadow="0 0 10px rgba(45, 212, 191, 0.6)"
                             flexShrink={0}
                           />
                         )}

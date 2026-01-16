@@ -10,28 +10,28 @@ function Awards() {
   }
   const awards = [
     {
-      title: 'ASEAN Secondary Scholarship',
-      organization: 'Saint Andrew\'s Junior College',
-      year: '2014 - 2018',
-      description: 'Full-ride scholarship for 4 years of secondary and junior college education',
+      title: 'Music Ig Club - Social Media Growth',
+      organization: 'Music Ig Club | President',
+      year: '2024 - 2025',
+      description: 'Attracted over 1.000 likes and followers for the club\'s Fanpage within a year. Received approximately 150 to 300 reactions and 8.000 views per post. Published 3 music videos with combined views totalling more than 100.000',
       logo: saLogo,
-      icon: '⭐',
+      icon: '🎵',
     },
     {
-      title: 'ASEAN Undergraduate Scholarship',
-      organization: 'National University of Singapore',
-      year: '2018 - 2022',
-      description: 'Full-ride scholarship for 4 years of undergraduate study',
+      title: 'Chạm 2025: "Vọng" - Event Success',
+      organization: 'Chạm 2025: Vọng | Head organizer',
+      year: '2024 - 2025',
+      description: 'Gained approximately over 10.000 views and 300 to 800 reactions per post. Expanded the club\'s scope of influence beyond the school, reaching students citywide who actively participated and shared about the events on social media. Attracted more than 400 participants in total. Received 25.000.000 in sponsorship and 20.000.000 in profit',
       logo: nusLogo,
-      icon: '🎓',
+      icon: '🎤',
     },
     {
-      title: '1st prize winning team | Healthcare track | AIxImpact Case Competition',
-      organization: 'QuantumBlack, a McKinsey company',
-      year: '2022',
-      description: 'Best Project award within the Healthcare track of AIxImpact Case Competition',
+      title: 'Media Recognition',
+      organization: 'Chạm 2025: Vọng',
+      year: '2025',
+      description: 'Appeared 4 times on major domestic media channels: Vietbeauty, sportandcultural, newHanoi, womenandlaw thanks to the event\'s outreach. Continued encouraging young people to surpass difficulties, self-doubt to reach their dream through song list and multimedia posts',
       logo: nusLogo,
-      icon: '⭐',
+      icon: '📺',
     }
   ]
 
@@ -54,7 +54,7 @@ function Awards() {
             as="span"
             fontSize={{ base: 'md', md: 'lg' }}
             fontWeight={700}
-            color="purple.600"
+            color="orange.600"
             textTransform="uppercase"
             letterSpacing="wide"
             px={6}
@@ -71,7 +71,7 @@ function Awards() {
             fontWeight={800}
             textAlign="center"
             lineHeight="shorter"
-            bgGradient="linear(135deg, #667eea 0%, #764ba2 100%)"
+            bgGradient="linear(135deg, #FF6B6B 0%, #FF8E53 50%, #4ECDC4 100%)"
             bgClip="text"
             letterSpacing="tight"
           >
@@ -93,8 +93,8 @@ function Awards() {
                 overflow="hidden"
                 _hover={{
                   transform: 'translateY(-8px)',
-                  boxShadow: '0 12px 40px rgba(102, 126, 234, 0.15)',
-                  borderColor: 'purple.200',
+                  boxShadow: '0 12px 40px rgba(255, 107, 107, 0.15)',
+                  borderColor: 'orange.200',
                 }}
                 transition="all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
               >
@@ -108,9 +108,9 @@ function Awards() {
                   justifyContent="center"
                   mx="auto"
                   mb={6}
-                  boxShadow="0 8px 24px rgba(102, 126, 234, 0.3)"
+                  boxShadow="0 8px 24px rgba(255, 107, 107, 0.3)"
                   border="3px solid"
-                  borderColor="purple.100"
+                  borderColor="orange.100"
                   p={3}
                   position="relative"
                   overflow="hidden"
@@ -126,12 +126,12 @@ function Awards() {
                 <Heading as="h3" fontSize="lg" mb={3} color="gray.900" fontWeight={700}>
                   {award.title}
                 </Heading>
-                <Text fontSize="md" color="purple.700" fontWeight={600} mb={3}>
+                <Text fontSize="md" color="orange.700" fontWeight={600} mb={3}>
                   {award.organization}
                 </Text>
                 <Badge
-                  bgGradient="linear(135deg, #667eea, #764ba2)"
-                  color="blue"
+                  bgGradient="linear(135deg, #FF6B6B, #FF8E53)"
+                  color="white"
                   backgroundColor="gray.100"
                   mb={4}
                   px={4}
@@ -155,8 +155,8 @@ function Awards() {
             bottom={8}
             left="50%"
             transform="translateX(-50%)"
-            color="purple.600"
-            _hover={{ color: 'purple.700', transform: 'translateX(-50%) translateY(4px)' }}
+        color="orange.600"
+        _hover={{ color: 'orange.700', transform: 'translateX(-50%) translateY(4px)' }}
             cursor="pointer"
             onClick={() => scrollToSection('projects')}
             transition="all 0.3s"

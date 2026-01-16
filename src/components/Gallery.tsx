@@ -87,7 +87,7 @@ function Gallery() {
             as="span"
             fontSize={{ base: 'md', md: 'lg' }}
             fontWeight={700}
-            color="purple.600"
+            color="orange.600"
             textTransform="uppercase"
             letterSpacing="wide"
             px={6}
@@ -104,7 +104,7 @@ function Gallery() {
             fontWeight={800}
             textAlign="center"
             lineHeight="shorter"
-            bgGradient="linear(135deg, #667eea 0%, #764ba2 100%)"
+            bgGradient="linear(135deg, #FF6B6B 0%, #FF8E53 50%, #4ECDC4 100%)"
             bgClip="text"
             letterSpacing="tight"
           >
@@ -125,8 +125,8 @@ function Gallery() {
               borderColor="gray.100"
               _hover={{
                 transform: 'scale(1.03)',
-                boxShadow: '0 12px 40px rgba(102, 126, 234, 0.15)',
-                borderColor: 'purple.200',
+                boxShadow: '0 12px 40px rgba(255, 107, 107, 0.15)',
+                borderColor: 'orange.200',
               }}
               transition="all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
             >
@@ -182,8 +182,8 @@ function Gallery() {
         bottom={8}
         left="50%"
         transform="translateX(-50%)"
-        color="purple.600"
-        _hover={{ color: 'purple.700', transform: 'translateX(-50%) translateY(4px)' }}
+        color="orange.600"
+        _hover={{ color: 'orange.700', transform: 'translateX(-50%) translateY(4px)' }}
         cursor="pointer"
         onClick={() => scrollToSection('videos')}
         transition="all 0.3s"

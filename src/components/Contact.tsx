@@ -49,7 +49,7 @@ function Contact() {
         w="400px"
         h="400px"
         borderRadius="full"
-        bg="purple.50"
+        bg="orange.50"
         opacity={0.3}
         filter="blur(60px)"
       />
@@ -60,7 +60,7 @@ function Contact() {
         w="500px"
         h="500px"
         borderRadius="full"
-        bg="blue.50"
+        bg="teal.50"
         opacity={0.3}
         filter="blur(60px)"
       />
@@ -73,12 +73,12 @@ function Contact() {
               as="span"
               fontSize={{ base: 'md', md: 'lg' }}
               fontWeight={700}
-              color="purple.600"
+              color="orange.600"
               textTransform="uppercase"
               letterSpacing="wide"
               px={6}
               py={3}
-              bg="gray.50"
+              bg="blue.100"
               borderRadius="full"
               boxShadow="md"
             >
@@ -90,7 +90,7 @@ function Contact() {
               fontWeight={800}
               textAlign="center"
               lineHeight="shorter"
-              bgGradient="linear(135deg, #667eea 0%, #764ba2 100%)"
+              bgGradient="linear(135deg, #FF6B6B 0%, #FF8E53 50%, #4ECDC4 100%)"
               bgClip="text"
               letterSpacing="tight"
             >
@@ -105,24 +105,24 @@ function Contact() {
               lineHeight="tall"
               fontWeight={500}
             >
-              I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology and data engineering.
+              I'm always open to discussing creative collaborations, media projects, or just having a chat about communication and new media.
             </Text>
           </VStack>
 
           {/* Contact Form */}
           <Box
-            bg="white"
+            bg="blue.50"
             p={{ base: 8, md: 12 }}
             borderRadius="2xl"
             boxShadow="xl"
             border="1px solid"
-            borderColor="purple.100"
+            borderColor="orange.100"
             maxW="800px"
             mx="auto"
             w="100%"
             _hover={{
               boxShadow: '2xl',
-              borderColor: 'purple.200',
+              borderColor: 'orange.200',
             }}
             transition="all 0.3s"
           >
@@ -145,14 +145,14 @@ function Contact() {
                       onChange={handleChange}
                       placeholder="Your Name"
                       required
-                      bg="gray.50"
+                      bg="blue.100"
                       borderColor="gray.200"
                       _hover={{
-                        borderColor: 'purple.300',
+                        borderColor: 'orange.300',
                       }}
                       _focus={{
-                        borderColor: 'purple.500',
-                        boxShadow: '0 0 0 1px #667eea',
+                        borderColor: 'orange.500',
+                        boxShadow: '0 0 0 1px #FF6B6B',
                       }}
                     />
                   </Box>
@@ -172,14 +172,14 @@ function Contact() {
                       onChange={handleChange}
                       placeholder="your.email@example.com"
                       required
-                      bg="gray.50"
+                      bg="blue.100"
                       borderColor="gray.200"
                       _hover={{
-                        borderColor: 'purple.300',
+                        borderColor: 'orange.300',
                       }}
                       _focus={{
-                        borderColor: 'purple.500',
-                        boxShadow: '0 0 0 1px #667eea',
+                        borderColor: 'orange.500',
+                        boxShadow: '0 0 0 1px #FF6B6B',
                       }}
                     />
                   </Box>
@@ -200,7 +200,7 @@ function Contact() {
                     value={formData.subject}
                     onChange={handleChange}
                     placeholder="What's this about?"
-                    bg="gray.50"
+                    bg="blue.100"
                     borderColor="gray.200"
                     _hover={{
                       borderColor: 'purple.300',
@@ -229,7 +229,7 @@ function Contact() {
                     placeholder="Tell me about your project or just say hello!"
                     required
                     rows={6}
-                    bg="gray.50"
+                    bg="blue.100"
                     borderColor="gray.200"
                     resize="vertical"
                     _hover={{
@@ -246,10 +246,10 @@ function Contact() {
                 <Button
                   type="submit"
                   size={{ base: 'md', md: 'lg' }}
-                  bgGradient="linear(135deg, #667eea 0%, #764ba2 100%)"
-                  color="blue.600"
+                  bgGradient="linear(135deg, #FF6B6B 0%, #FF8E53 50%, #4ECDC4 100%)"
+                  color="gray.900"
                   fontWeight={600}
-                  backgroundColor="gray.100"
+                  backgroundColor="orange.400"
                   px={8}
                   py={6}
                   fontSize={{ base: 'md', md: 'lg' }}
@@ -278,70 +278,6 @@ function Contact() {
                 Or connect with me on
               </Text>
               <HStack gap={6} justify="center" flexWrap="wrap">
-                <Link
-                  href="https://github.com/nhamhung"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  _hover={{ textDecoration: 'none' }}
-                >
-                  <Box
-                    w="50px"
-                    h="50px"
-                    borderRadius="full"
-                    bg="gray.100"
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
-                    _hover={{
-                      bg: 'gray.900',
-                      transform: 'translateY(-4px) scale(1.1)',
-                      '& svg': {
-                        color: 'white',
-                      },
-                    }}
-                    transition="all 0.3s"
-                    css={{
-                      '& svg': {
-                        color: '#1a202c',
-                        transition: 'color 0.3s',
-                      },
-                    }}
-                  >
-                    <FaGithub size={24} />
-                  </Box>
-                </Link>
-                <Link
-                  href="https://www.linkedin.com/in/quoc-hung-nham/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  _hover={{ textDecoration: 'none' }}
-                >
-                  <Box
-                    w="50px"
-                    h="50px"
-                    borderRadius="full"
-                    bg="blue.50"
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
-                    _hover={{
-                      bg: '#0077b5',
-                      transform: 'translateY(-4px) scale(1.1)',
-                      '& svg': {
-                        color: 'white',
-                      },
-                    }}
-                    transition="all 0.3s"
-                    css={{
-                      '& svg': {
-                        color: '#0077b5',
-                        transition: 'color 0.3s',
-                      },
-                    }}
-                  >
-                    <FaLinkedin size={24} />
-                  </Box>
-                </Link>
                 <Link
                   href="mailto:nhamhung.gttn@gmail.com"
                   _hover={{ textDecoration: 'none' }}

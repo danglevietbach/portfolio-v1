@@ -28,7 +28,7 @@ function About() {
         w="400px"
         h="400px"
         borderRadius="full"
-        bg="purple.50"
+        bg="orange.50"
         opacity={0.3}
         filter="blur(60px)"
       />
@@ -39,7 +39,7 @@ function About() {
         w="500px"
         h="500px"
         borderRadius="full"
-        bg="blue.50"
+        bg="teal.50"
         opacity={0.3}
         filter="blur(60px)"
       />
@@ -52,12 +52,12 @@ function About() {
               as="span"
               fontSize={{ base: 'md', md: 'lg' }}
               fontWeight={700}
-              color="purple.600"
+              color="orange.600"
               textTransform="uppercase"
               letterSpacing="wide"
               px={6}
               py={3}
-              bg="white"
+              bg="purple.50"
               borderRadius="full"
               boxShadow="md"
             >
@@ -69,7 +69,7 @@ function About() {
               fontWeight={800}
               textAlign="center"
               lineHeight="shorter"
-              bgGradient="linear(135deg, #667eea 0%, #764ba2 100%)"
+              bgGradient="linear(135deg, #FF6B6B 0%, #FF8E53 50%, #4ECDC4 100%)"
               bgClip="text"
               letterSpacing="tight"
             >
@@ -83,12 +83,12 @@ function About() {
           >
             <VStack gap={4} align="stretch">
               <Box
-                bg="white"
+                bg="purple.50"
                 p={{ base: 6, md: 8 }}
                 borderRadius="2xl"
                 boxShadow="xl"
                 border="1px solid"
-                borderColor="blue.100"
+                borderColor="orange.100"
                 _hover={{
                   boxShadow: '2xl',
                   transform: 'translateY(-2px)',
@@ -102,17 +102,17 @@ function About() {
                 textAlign="center"
                 fontWeight={500}
               >
-                I'm a passionate <Text as="span" fontWeight={700} color="purple.600">Data Engineer</Text> with a love for building reliable and efficient data pipelines. With a deep expertise in <Text as="span" fontWeight={700} color="blue.600">Big Data and Analytics</Text>, I enjoy transforming raw data into actionable insights, hence enabling organizations to make data-driven decisions.
+                I'm a passionate student leader dedicated to <Text as="span" fontWeight={700} color="orange.600">enriching high school students' experiences</Text> through creative media projects, large-scale events, and community engagement. With a deep commitment to <Text as="span" fontWeight={700} color="teal.600">building platforms for young people to discover and develop their talents</Text>, I lead teams, organize impactful events, and create meaningful connections that inspire students to shine.
               </Text>
               </Box>
 
               <Box
-                bg="white"
+                bg="purple.50"
                 p={{ base: 6, md: 8 }}
                 borderRadius="2xl"
                 boxShadow="xl"
                 border="1px solid"
-                borderColor="purple.100"
+                borderColor="orange.100"
                 _hover={{
                   boxShadow: '2xl',
                   transform: 'translateY(-2px)',
@@ -126,7 +126,7 @@ function About() {
                 textAlign="center"
                 fontWeight={500}
               >
-                When I'm not coding, you can find me doing <Text as="span" fontWeight={700} color="cyan.600">3 things simultaneously</Text>: pursuing higher studies, exploring new technologies and mentoring students on all things education-related and in various formats.
+                Through my leadership roles, I've managed teams of 70+ members, organized events attracting hundreds of participants, and built social media platforms reaching thousands of views. I'm passionate about <Text as="span" fontWeight={700} color="teal.600">mentoring the next generation of student leaders</Text>, creating opportunities for growth, and making a positive impact in my community through music, charity work, and educational initiatives.
               </Text>
               </Box>
             </VStack>
@@ -140,19 +140,19 @@ function About() {
             w="100%"
           >
             <Box
-              bg="white"
+              bg="purple.50"
               p={{ base: 8, md: 10 }}
               borderRadius="2xl"
               boxShadow="xl"
               textAlign="center"
               border="2px solid"
-              borderColor="purple.200"
+              borderColor="orange.200"
               position="relative"
               overflow="hidden"
               _hover={{
                 transform: 'translateY(-8px) scale(1.02)',
                 boxShadow: '2xl',
-                borderColor: 'purple.400',
+                borderColor: 'orange.400',
               }}
               transition="all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
             >
@@ -162,39 +162,39 @@ function About() {
                 left={0}
                 right={0}
                 h="4px"
-                bgGradient="linear(90deg, #667eea 0%, #764ba2 100%)"
+                bgGradient="linear(90deg, #FF6B6B 0%, #FF8E53 100%)"
               />
               <Heading
                 as="h3"
                 fontSize={{ base: '5xl', md: '6xl' }}
                 fontWeight={800}
-                color="purple.600"
+                color="orange.600"
                 mb={5}
               >
-                4+
+                70+
               </Heading>
               <Text fontSize="lg" fontWeight={600} color="gray.800" mb={1}>
-                Years of Professional Data
+                Team Members
               </Text>
               <Text fontSize="lg" fontWeight={600} color="gray.800">
-                and Software Engineering
+                Managed & Led
               </Text>
             </Box>
 
             <Box
-              bg="white"
+              bg="purple.50"
               p={{ base: 8, md: 10 }}
               borderRadius="2xl"
               boxShadow="xl"
               textAlign="center"
               border="2px solid"
-              borderColor="blue.200"
+              borderColor="teal.200"
               position="relative"
               overflow="hidden"
               _hover={{
                 transform: 'translateY(-8px) scale(1.02)',
                 boxShadow: '2xl',
-                borderColor: 'blue.400',
+                borderColor: 'teal.400',
               }}
               transition="all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
             >
@@ -204,39 +204,39 @@ function About() {
                 left={0}
                 right={0}
                 h="4px"
-                bgGradient="linear(90deg, #2196F3 0%, #00BCD4 100%)"
+                bgGradient="linear(90deg, #4ECDC4 0%, #44A08D 100%)"
               />
               <Heading
                 as="h3"
                 fontSize={{ base: '5xl', md: '6xl' }}
                 fontWeight={800}
-                color="blue.600"
+                color="teal.600"
                 mb={5}
               >
-                5+
+                100K+
               </Heading>
               <Text fontSize="lg" fontWeight={600} color="gray.800" mb={1}>
-                Years of Teaching and
+                Combined Video
               </Text>
               <Text fontSize="lg" fontWeight={600} color="gray.800">
-                Mentoring
+                Views Achieved
               </Text>
             </Box>
 
             <Box
-              bg="white"
+              bg="purple.50"
               p={{ base: 8, md: 10 }}
               borderRadius="2xl"
               boxShadow="xl"
               textAlign="center"
               border="2px solid"
-              borderColor="cyan.200"
+              borderColor="pink.200"
               position="relative"
               overflow="hidden"
               _hover={{
                 transform: 'translateY(-8px) scale(1.02)',
                 boxShadow: '2xl',
-                borderColor: 'cyan.400',
+                borderColor: 'pink.400',
               }}
               transition="all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
             >
@@ -246,22 +246,22 @@ function About() {
                 left={0}
                 right={0}
                 h="4px"
-                bgGradient="linear(90deg, #00BCD4 0%, #009688 100%)"
+                bgGradient="linear(90deg, #FF8B94 0%, #FF6B9D 100%)"
               />
               <Heading
                 as="h3"
                 fontSize={{ base: '5xl', md: '6xl' }}
                 fontWeight={800}
-                color="cyan.600"
+                color="pink.600"
                 mb={5}
               >
-                3+
+                400+
               </Heading>
               <Text fontSize="lg" fontWeight={600} color="gray.800" mb={1}>
-                Years of Creating and Sharing
+                Event Participants
               </Text>
               <Text fontSize="lg" fontWeight={600} color="gray.800">
-                Educational Content
+                in Major Events
               </Text>
             </Box>
           </SimpleGrid>
@@ -274,8 +274,8 @@ function About() {
         bottom={8}
         left="50%"
         transform="translateX(-50%)"
-        color="purple.600"
-        _hover={{ color: 'purple.700', transform: 'translateX(-50%) translateY(4px)' }}
+        color="orange.600"
+        _hover={{ color: 'orange.700', transform: 'translateX(-50%) translateY(4px)' }}
         cursor="pointer"
         onClick={() => scrollToSection('education')}
         transition="all 0.3s"

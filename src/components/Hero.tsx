@@ -2,15 +2,13 @@ import { Box, Container, Heading, Text, Button, Flex, VStack, Link } from '@chak
 import { HiArrowDown } from 'react-icons/hi'
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import { useState, useEffect } from 'react'
-import photo1 from '../assets/photo_1.jpg'
-import photo2 from '../assets/photo_2.jpg'
-import photo3 from '../assets/photo_3.jpg'
-import photo4 from '../assets/photo_4.jpg'
-import photo5 from '../assets/photo_5.jpg'
-import photo6 from '../assets/photo_6.jpg'
+import bg1 from '../assets/images/Background/IMG_2359.JPG'
+import bg2 from '../assets/images/Background/e20fed349d74603144f13c41a152ed57.jpeg'
+import bg3 from '../assets/images/Background/IMG_3526.JPG'
+import bg4 from '../assets/images/Background/IMG_8988.JPG'
 
 function Hero() {
-  const images = [photo1, photo2, photo3, photo4, photo5, photo6]
+  const images = [bg1, bg2, bg3, bg4]
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   useEffect(() => {
@@ -124,7 +122,7 @@ function Hero() {
                   animation: 'fadeInUp 1s ease-out 0.2s both',
                 }}
               >
-                Nham Quoc Hung
+                Dang Le Viet Bach
               </Heading>
               <Heading
                 as="h2"
@@ -137,19 +135,21 @@ function Hero() {
                   animation: 'fadeInUp 1s ease-out 0.4s both',
                 }}
               >
-                Data Engineer, Software Engineer & Educator
+                Communication & New Media Student
               </Heading>
               <Text
                 fontSize={{ base: 'md', md: 'lg' }}
-                color="white"
+                color="yellow.100"
                 maxW="600px"
                 lineHeight="tall"
-                opacity={0.9}
+                opacity={1}
+                fontWeight={500}
+                textShadow="0 2px 8px rgba(0, 0, 0, 0.5)"
                 css={{
                   animation: 'fadeInUp 1s ease-out 0.6s both',
                 }}
               >
-                I am a Computer Science graduate with a specialisation in Data and passion for teaching.
+                I am a passionate student leader dedicated to enriching high school students' experiences through creative media projects, large-scale events, and community engagement.
               </Text>
             </Box>
 
@@ -162,19 +162,19 @@ function Hero() {
               }}
             >
               <Button
-                onClick={() => scrollToSection('projects')}
+                onClick={() => scrollToSection('leadership')}
                 size={{ base: 'md', md: 'lg' }}
-                bg="white"
-                color="purple.700"
+                bg="orange.400"
+                color="white"
                 fontWeight={600}
                 px={8}
                 boxShadow="0 8px 30px rgba(0, 0, 0, 0.3)"
                 _hover={{
                   transform: 'translateY(-4px) scale(1.05)',
                   boxShadow: '0 12px 40px rgba(0, 0, 0, 0.4)',
-                  bg: 'gray.50',
+                  bg: 'orange.500',
                 }}
-                backgroundColor="gray.100"
+                backgroundColor="orange.400"
                 transition="all 0.3s"
                 css={{
                   animation: 'buttonPulse 3s ease-in-out infinite',
@@ -186,19 +186,19 @@ function Hero() {
                 onClick={() => scrollToSection('contact')}
                 size={{ base: 'md', md: 'lg' }}
                 variant="outline"
-                borderColor="white"
+                borderColor="orange.300"
                 borderWidth="2px"
-                color="blue.600"
+                color="orange.700"
                 fontWeight={600}
                 px={8}
-                bg="rgba(255, 255, 255, 0.1)"
+                bg="orange.100"
                 backdropFilter="blur(10px)"
                 _hover={{
-                  bg: 'rgba(255, 255, 255, 0.2)',
+                  bg: 'orange.200',
                   transform: 'translateY(-4px) scale(1.05)',
-                  borderColor: 'white',
+                  borderColor: 'orange.400',
                 }}
-                backgroundColor="gray.100"
+                backgroundColor="orange.100"
                 transition="all 0.3s"
               >
                 Get In Touch
@@ -213,42 +213,10 @@ function Hero() {
               }}
             >
               <Link
-                href="https://github.com/nhamhung"
-                target="_blank"
-                rel="noopener noreferrer"
-                color="white"
-                _hover={{
-                  color: 'white',
-                  transform: 'translateY(-4px) scale(1.2)',
-                }}
-                transition="all 0.3s"
-                css={{
-                  filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3))',
-                }}
-              >
-                <FaGithub size={24} />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/quoc-hung-nham/"
-                target="_blank"
-                rel="noopener noreferrer"
-                color="white"
-                _hover={{
-                  color: 'white',
-                  transform: 'translateY(-4px) scale(1.2)',
-                }}
-                transition="all 0.3s"
-                css={{
-                  filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3))',
-                }}
-              >
-                <FaLinkedin size={24} />
-              </Link>
-              <Link
                 href="mailto:nhamhung.gttn@gmail.com"
-                color="white"
+                color="yellow.200"
                 _hover={{
-                  color: 'white',
+                  color: 'yellow.100',
                   transform: 'translateY(-4px) scale(1.2)',
                 }}
                 transition="all 0.3s"
@@ -268,7 +236,7 @@ function Hero() {
         bottom={8}
         left="50%"
         transform="translateX(-50%)"
-        color="white"
+        color="yellow.200"
         cursor="pointer"
         onClick={() => scrollToSection('about')}
         transition="all 0.3s"
@@ -283,7 +251,7 @@ function Hero() {
           filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3))',
         }}
         _hover={{
-          color: 'white',
+          color: 'yellow.100',
           transform: 'translateX(-50%) translateY(-5px)',
         }}
       >
