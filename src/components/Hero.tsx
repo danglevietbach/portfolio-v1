@@ -1,6 +1,6 @@
 import { Box, Container, Heading, Text, Button, Flex, VStack, Link } from '@chakra-ui/react'
 import { HiArrowDown } from 'react-icons/hi'
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
+import { FaEnvelope } from 'react-icons/fa'
 import { useState, useEffect } from 'react'
 import bg1 from '../assets/images/Background/IMG_2359.JPG'
 import bg2 from '../assets/images/Background/e20fed349d74603144f13c41a152ed57.jpeg'
@@ -62,7 +62,7 @@ function Hero() {
             backgroundSize="cover"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
-            opacity={index === currentImageIndex ? 1 : 0}
+            opacity={index === currentImageIndex ? 0.2 : 0}
             transition="opacity 1.5s ease-in-out"
           />
         ))}

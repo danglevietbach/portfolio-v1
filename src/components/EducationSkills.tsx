@@ -38,21 +38,21 @@ function EducationSkills() {
 
   const skillCategories = [
     {
-      category: 'Leadership & Management',
-      skills: ['Team Leadership', 'Event Planning', 'Project Management', 'Strategic Planning', 'Public Speaking', 'Mentoring'],
+      category: 'Media Production',
+      skills: ['Video Editing', 'Audio Production', 'Photography', 'Cinematography', 'Post-Production', 'Color Grading'],
     },
     {
-      category: 'Media Production',
-      skills: ['Video Editing', 'Audio Production', 'Photography', 'Social Media Management', 'Content Creation', 'Multimedia Production'],
+      category: 'Digital Design',
+      skills: ['Adobe Creative Suite', 'Figma', 'UI/UX Design', 'Graphic Design', 'Motion Graphics', 'Typography'],
+    },
+    {
+      category: 'Content Creation',
+      skills: ['Content Strategy', 'Social Media Management', 'Copywriting', 'Storytelling', 'Branding', 'Digital Marketing'],
     },
     {
       category: 'Communication',
-      skills: ['Public Relations', 'Marketing', 'Branding', 'Storytelling', 'Interpersonal Communication', 'Presentation Design'],
-    },
-    {
-      category: 'Digital Skills',
-      skills: ['Web Development', 'HTML/CSS', 'JavaScript', 'Adobe Creative Suite', 'Figma', 'UI/UX Design'],
-    },
+      skills: ['Public Speaking', 'Presentation Design', 'Interpersonal Communication', 'Media Writing', 'Journalism', 'Research'],
+    }
   ]
 
   return (
