@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Box, Heading, Text, VStack, HStack, Link, Button, Input, Textarea } from '@chakra-ui/react'
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
+import { FaEnvelope } from 'react-icons/fa'
 
 function Contact() {
   const [formData, setFormData] = useState({
