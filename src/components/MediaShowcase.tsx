@@ -32,9 +32,6 @@ import friend9 from '../assets/images/Friends/IMG_3371.JPG'
 import friend10 from '../assets/images/Friends/IMG_3798.JPG'
 import friend11 from '../assets/images/Friends/IMG_6691.JPG'
 
-// Move Up image
-import moveup from '../assets/images/Moveup /IMG_6173.jpeg'
-
 // School image
 import school from '../assets/images/NguyenHuehighschoolforthegifted.jpg'
 
@@ -236,15 +233,6 @@ function MediaShowcase() {
       description: 'Ensuring effective publicity campaigns and event preparation',
       category: 'Team',
     },
-    // Move Up image
-    {
-      id: 24,
-      src: moveup,
-      alt: 'Move Up CNH',
-      title: 'Move Up CNH',
-      description: 'Leading graduation events and managing Human Resources department',
-      category: 'Project',
-    },
     // School image
     {
       id: 25,
@@ -256,7 +244,7 @@ function MediaShowcase() {
     },
   ]
 
-  const categories = ['All', 'Music', 'Charity', 'Team', 'Project', 'School']
+  const categories = ['All', 'Music', 'Charity', 'Team', 'School']
   const filteredImages = selectedCategory === 'All' 
     ? galleryImages 
     : galleryImages.filter(img => img.category === selectedCategory)
@@ -358,17 +346,9 @@ function MediaShowcase() {
                 src={image.src}
                 alt={image.alt}
                 w="100%"
-                h="220px"
+                h="300px"
                 objectFit="cover"
               />
-              <Box p={5}>
-                <Heading as="h3" fontSize="md" mb={2} fontWeight={600} color="gray.900">
-                  {image.title}
-                </Heading>
-                <Text fontSize="sm" color="gray.700" lineHeight="tall" fontWeight={500}>
-                  {image.description}
-                </Text>
-              </Box>
             </Box>
           ))}
         </SimpleGrid>
@@ -385,15 +365,8 @@ function MediaShowcase() {
                   src={selectedImage.src}
                   alt={selectedImage.alt}
                   w="100%"
-                  mb={4}
                   borderRadius="md"
                 />
-                <Heading as="h3" fontSize="md" mb={2} color="gray.900">
-                  {selectedImage.title}
-                </Heading>
-                <Text color="gray.800" fontWeight={500}>
-                  {selectedImage.description}
-                </Text>
               </Box>
             )}
           </Dialog.Content>
@@ -409,7 +382,7 @@ function MediaShowcase() {
         color="orange.600"
         _hover={{ color: 'orange.700', transform: 'translateX(-50%) translateY(4px)' }}
         cursor="pointer"
-        onClick={() => scrollToSection('education-skills')}
+        onClick={() => scrollToSection('facebook-showcase')}
         transition="all 0.3s"
         zIndex={2}
         display={{ base: 'none', md: 'block' }}

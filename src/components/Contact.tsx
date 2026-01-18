@@ -279,7 +279,7 @@ function Contact() {
               </Text>
               <HStack gap={6} justify="center" flexWrap="wrap">
                 <Link
-                  href="mailto:nhamhung.gttn@gmail.com"
+                  href="mailto:danglevitbac@gmail.com"
                   _hover={{ textDecoration: 'none' }}
                 >
                   <Box

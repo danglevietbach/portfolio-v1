@@ -25,6 +25,7 @@ function Navbar({ activeSection = 'home' }: NavbarProps) {
     { id: 'leadership', label: 'Leadership' },
     { id: 'impact', label: 'Impact' },
     { id: 'media', label: 'Media' },
+    { id: 'facebook-showcase', label: 'Leadership' },
     { id: 'education-skills', label: 'Education & Skills' },
     { id: 'contact', label: 'Contact' },
   ]

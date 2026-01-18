@@ -7,6 +7,7 @@ import About from "./components/About";
 import LeadershipJourney from "./components/LeadershipJourney";
 import ImpactMetrics from "./components/ImpactMetrics";
 import MediaShowcase from "./components/MediaShowcase";
+import FacebookShowcase from "./components/FacebookShowcase";
 import EducationSkills from "./components/EducationSkills";
 import Contact from "./components/Contact";
 
@@ -20,6 +21,7 @@ function App() {
       "leadership",
       "impact",
       "media",
+      "facebook-showcase",
       "education-skills",
       "contact",
     ];
@@ -65,6 +67,7 @@ function App() {
         <LeadershipJourney />
         <ImpactMetrics />
         <MediaShowcase />
+        <FacebookShowcase />
         <EducationSkills />
         <Contact />
       </Box>

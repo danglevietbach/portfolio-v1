@@ -213,7 +213,7 @@ function Hero() {
               }}
             >
               <Link
-                href="mailto:nhamhung.gttn@gmail.com"
+                href="mailto:danglevitbac@gmail.com"
                 color="yellow.200"
                 _hover={{
                   color: 'yellow.100',
