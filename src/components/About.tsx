@@ -126,7 +126,7 @@ function About() {
                 textAlign="center"
                 fontWeight={500}
               >
-                Through my leadership roles, I've managed teams of 70+ members, organized events attracting hundreds of participants, and built social media platforms reaching thousands of views. I'm passionate about <Text as="span" fontWeight={700} color="teal.600">mentoring the next generation of student leaders</Text>, creating opportunities for growth, and making a positive impact in my community through music, charity work, and educational initiatives.
+                Through my leadership roles, I've managed teams of 100+ members, organized events attracting hundreds of participants, and built social media platforms reaching thousands of views. I'm passionate about <Text as="span" fontWeight={700} color="teal.600">mentoring the next generation of student leaders</Text>, creating opportunities for growth, and making a positive impact in my community through music, charity work, and educational initiatives.
               </Text>
               </Box>
             </VStack>
@@ -171,7 +171,7 @@ function About() {
                 color="orange.600"
                 mb={5}
               >
-                70+
+                100+
               </Heading>
               <Text fontSize="lg" fontWeight={600} color="gray.800" mb={1}>
                 Team Members
@@ -255,7 +255,7 @@ function About() {
                 color="pink.600"
                 mb={5}
               >
-                400+
+                1000+
               </Heading>
               <Text fontSize="lg" fontWeight={600} color="gray.800" mb={1}>
                 Event Participants

@@ -42,19 +42,19 @@ function FacebookShowcase() {
   const musicVideos = [
     {
       id: 1,
-      title: 'MV1',
+      title: 'Recap Main Show',
       url: 'https://www.facebook.com/mic.cnh/videos/1700469903942395/',
       description: 'Creative music video showcasing talent and creativity',
     },
     {
       id: 2,
-      title: 'MV2',
+      title: 'Chrismast Project',
       url: 'https://www.facebook.com/mic.cnh/videos/1116802626462234/',
       description: 'Large-scale performance event with hundreds of participants',
     },
     {
       id: 3,
-      title: 'MV3',
+      title: 'Debut Showcase',
       url: 'https://www.facebook.com/mic.cnh/videos/3824386404515323/',
       description: 'Motivating young people to breakthrough and shine on stage',
     },

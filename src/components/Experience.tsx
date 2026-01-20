@@ -14,7 +14,7 @@ function Experience() {
       description: [
         'Headed the music club aimed at enriching high school students\' passion for music through creative media projects, photoshoots, and large-scale performance events. Organised a playground for them to uncover and develop their hidden talent',
         'Supervised key social media platforms including Facebook, Instagram and TikTok. Oversaw 3 musical videos with a combined view totalling more than 100.000 and hosted shows with hundreds of participants',
-        'Managed, directed and guided 70+ members on challenging administrative tasks to ensure effective publicity campaigns and proper preparation for key events',
+        'Managed, directed and guided 100+ members on challenging administrative tasks to ensure effective publicity campaigns and proper preparation for key events',
         'Built a platform to motivate young people, especially high school students, to breakthrough, perform and shine on the stage',
         'Devised and executed leadership camps for the club to groom the next batch of student leaders',
         'Supervised social media platforms including Facebook, Instagram and TikTok. Devised logistical, financial and public relation plans for 2 events: Minishow 2025: "Rực", Chạm 2025: "Vọng"',

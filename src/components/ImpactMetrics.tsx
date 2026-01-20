@@ -10,7 +10,7 @@ function ImpactMetrics() {
   const metrics = [
     {
       label: 'Team Members',
-      value: '70+',
+      value: '100+',
       description: 'Managed & Led',
       color: 'orange',
     },
@@ -22,7 +22,7 @@ function ImpactMetrics() {
     },
     {
       label: 'Event Participants',
-      value: '400+',
+      value: '1000+',
       description: 'in Major Events',
       color: 'pink',
     },

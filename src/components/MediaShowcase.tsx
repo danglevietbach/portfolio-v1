@@ -92,7 +92,7 @@ function MediaShowcase() {
       src: music6,
       alt: 'Music Club Member',
       title: 'Music Club Members',
-      description: 'Leading and guiding 70+ members in creative projects',
+      description: 'Leading and guiding 100+ members in creative projects',
       category: 'Music',
     },
     // Charity images
@@ -190,7 +190,7 @@ function MediaShowcase() {
       src: friend6,
       alt: 'Team Photo',
       title: 'Leadership Team',
-      description: 'Managing and directing teams of 70+ members',
+      description: 'Managing and directing teams of 100+ members',
       category: 'Team',
     },
     {

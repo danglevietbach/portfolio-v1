@@ -124,19 +124,6 @@ function Hero() {
               >
                 Dang Le Viet Bach
               </Heading>
-              <Heading
-                as="h2"
-                fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
-                fontWeight={600}
-                color="orange.300"
-                mb={6}
-                opacity={0.95}
-                css={{
-                  animation: 'fadeInUp 1s ease-out 0.4s both',
-                }}
-              >
-                Communication & New Media Student
-              </Heading>
               <Text
                 fontSize={{ base: 'md', md: 'lg' }}
                 color="yellow.100"
